@@ -1,5 +1,23 @@
 # atom-join-csv package
 
-A short description of your package.
+Join a selected set of lines to a comma separated (CSV) list of items, optionally enclosing each item in a single or double quote.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+e.g.  select the text
+
+    one
+    two
+    three
+    four
+    five
+
+Join as CSV ``Ctrl-Alt-j``
+
+    one,two,three,four,five
+
+Join as CSV with single quotes  ``Ctrl-Alt-Shift-J``
+
+    'one','two','three','four','five'
+
+Join as CSV with double quotes
+
+    "one","two","three","four","five"

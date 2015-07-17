@@ -1,0 +1,18 @@
+{
+  "name": "atom-join-csv",
+  "main": "./lib/atom-join-csv",
+  "version": "0.1.0",
+  "description": "Join multiple lines to a single line of CSV items.",
+  "keywords": [ "csv", "join"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-join-csv:joincsv"
+  },
+  "repository": "https://github.com/scross01/atom-join-csv",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

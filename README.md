@@ -1,4 +1,4 @@
-# atom-join-plus package
+# join-plus
 
 Join a selected set of lines to a comma separated list of items, optionally enclosing each item in a single or double quote.
 

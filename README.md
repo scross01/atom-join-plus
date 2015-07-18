@@ -1,6 +1,6 @@
-# atom-join-csv package
+# atom-join-plus package
 
-Join a selected set of lines to a comma separated (CSV) list of items, optionally enclosing each item in a single or double quote.
+Join a selected set of lines to a comma separated list of items, optionally enclosing each item in a single or double quote.
 
 e.g.  select the text
 

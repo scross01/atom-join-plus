@@ -2,7 +2,7 @@
   "name": "join-plus",
   "main": "./lib/join-plus",
   "version": "0.3.2",
-  "description": "Join multiple lines to a single line .",
+  "description": "Join multiple lines to a single line.",
   "keywords": [
     "csv",
     "join"
@@ -11,7 +11,8 @@
     "atom-workspace": [
       "join-plus:join-csv",
       "join-plus:join-csv-single-quote",
-      "join-plus:join-csv-double-quote"
+      "join-plus:join-csv-double-quote",
+      "join-plus:unjoin-csv"
     ]
   },
   "repository": "https://github.com/scross01/atom-join-plus",

@@ -11,6 +11,7 @@ module.exports =
     @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:join-csv': => @joinCsv()
     @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:join-csv-single-quote': => @joinCsvQuoted()
     @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:join-csv-double-quote': => @joinCsvQuoted2()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:unjoin-csv': => @unjoinCsv()
 
   deactivate: ->
     @subscriptions.dispose()
@@ -35,3 +36,9 @@ module.exports =
       update = selection.replace /\n/g, "\",\""
       update = update.replace /","$/, ""
       editor.insertText("\"" + update + "\"")
+
+  unjoinCsv: ->
+    if editor = atom.workspace.getActiveTextEditor()
+      selection = editor.getSelectedText()
+      update = selection.replace /,/g, "\n"
+      editor.insertText(update)

@@ -1,6 +1,6 @@
 'context-menu':
   'atom-text-editor': [
-    'label': 'Join as CSV'
+    'label': 'Join'
     'submenu': [
       {
         'label': 'Join'
@@ -13,6 +13,10 @@
       {
         'label': 'Join quoted by \"'
         'command': 'join-plus:join-csv-double-quote'
+      }
+      {
+        'label': 'Unjoin '
+        'command': 'join-plus:unjoin-csv'
       }
     ]
   ]

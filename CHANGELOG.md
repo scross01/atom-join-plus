@@ -1,3 +1,6 @@
+## next
+- Added an unjoin command
+
 ## 0.3.0
 - Renamed package again, to just join-plus
 - Code cleanup

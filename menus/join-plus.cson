@@ -1,18 +1,18 @@
 'context-menu':
   'atom-text-editor': [
-    'label': 'Join to CSV'
+    'label': 'Join as CSV'
     'submenu': [
       {
         'label': 'Join'
-        'command': 'atom-join-csv:joincsv'
+        'command': 'join-plus:join-csv'
       },
       {
         'label': 'Join quoted by \''
-        'command': 'atom-join-csv:joincsvsinglequote'
+        'command': 'join-plus:join-csv-single-quote'
       },
       {
         'label': 'Join quoted by \"'
-        'command': 'atom-join-csv:joincsvdoublequote'
+        'command': 'join-plus:join-csv-double-quote'
       }
     ]
   ]

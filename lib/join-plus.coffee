@@ -1,6 +1,6 @@
 {CompositeDisposable} = require 'atom'
 
-module.exports = AtomJoinCsv =
+module.exports =
   subscriptions: null
 
   activate: (state) ->
@@ -8,17 +8,12 @@ module.exports = AtomJoinCsv =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-join-csv:joincsv': => @joinCsv()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-join-csv:joincsvsinglequote': => @joinCsvQuoted()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-join-csv:joincsvdoublequote': => @joinCsvQuoted2()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:join-csv': => @joinCsv()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:join-csv-single-quote': => @joinCsvQuoted()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'join-plus:join-csv-double-quote': => @joinCsvQuoted2()
 
   deactivate: ->
-    @modalPanel.destroy()
     @subscriptions.dispose()
-    @atomJoinCsvView.destroy()
-
-  serialize: ->
-    atomJoinCsvViewState: @atomJoinCsvView.serialize()
 
   joinCsv: ->
     if editor = atom.workspace.getActiveTextEditor()

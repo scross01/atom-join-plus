@@ -1,5 +1,5 @@
 {
-  "name": "join-plus",
+  "name": "atom-join-plus",
   "main": "./lib/join-plus",
   "version": "0.2.0",
   "description": "Join multiple lines to a single line .",

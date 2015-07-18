@@ -1,9 +1,11 @@
 {
   "name": "atom-join-plus",
   "main": "./lib/atom-join-csv",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Join multiple lines to a single line .",
-  "keywords": [ "csv", "join"
+  "keywords": [
+    "csv",
+    "join"
   ],
   "activationCommands": {
     "atom-workspace": "atom-join-plus:joincsv"
@@ -13,6 +15,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

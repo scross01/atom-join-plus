@@ -8,5 +8,5 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
-  'ctrl-alt-j': 'atom-join-csv:joincsv'
-  'ctrl-alt-J': 'atom-join-csv:joincsvsinglequote'
+  'ctrl-alt-j': 'join-plus:join-csv'
+  'ctrl-alt-J': 'join-plus:join-csv-single-quote'

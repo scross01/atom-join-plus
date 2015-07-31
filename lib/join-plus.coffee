@@ -19,21 +19,21 @@ module.exports =
   joinCsv: ->
     if editor = atom.workspace.getActiveTextEditor()
       selection = editor.getSelectedText()
-      update = selection.replace /\n/g, ","
+      update = selection.replace /\r?\n/g, ","
       update = update.replace /,$/, "\n"
       editor.insertText(update)
 
   joinCsvQuoted: ->
     if editor = atom.workspace.getActiveTextEditor()
       selection = editor.getSelectedText()
-      update = selection.replace /\n/g, "','"
+      update = selection.replace /\r?\n/g, "','"
       update = update.replace /','$/, ""
       editor.insertText("'" + update + "'")
 
   joinCsvQuoted2: ->
     if editor = atom.workspace.getActiveTextEditor()
       selection = editor.getSelectedText()
-      update = selection.replace /\n/g, "\",\""
+      update = selection.replace /\r?\n/g, "\",\""
       update = update.replace /","$/, ""
       editor.insertText("\"" + update + "\"")
 

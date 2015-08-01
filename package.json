@@ -1,7 +1,7 @@
 {
   "name": "join-plus",
   "main": "./lib/join-plus",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Join multiple lines to a single line.",
   "keywords": [
     "csv",
